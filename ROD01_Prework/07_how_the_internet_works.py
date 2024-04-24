@@ -48,6 +48,8 @@ Your browser sends a request to HTTP server which responds to it
 HTTP requests (Methods)
 -----------------------
 GET - method used for requesting the contents of a website
+HEAD
+POST
 
 e.g.
 Simple request of HTTP website google.com/mail (sent by TCP)
