@@ -6,7 +6,7 @@ Today's software, and with it, modern devices cannot exist without an
 operating system. An operating system is a type of software that allows you
 to manage your computer system. The modern system consists of several layers:
 
-Users ge to interact with:
+Users get to interact with:
 - Applications
 - Utilities
 - OS

@@ -97,4 +97,57 @@ given file format, e.g.:
   support 32 or 64-bit technology. SysWOW directory only comes with 64-bit
   versions of Windows. As with other system directories, it is not
   recommended to modify the system directories by yourself.
+
+LINUX
+-----
+In the Linux family, the folder structure looks very different than in the
+Windows family. It was based on the FHS (Filesystem Hierarchy System)
+standard. It all starts with the root directory marked with "/".
+
+In the Linux systems there is the concept of "everything else is a file"
+i.e. every element of the system, e.g. a device, the running application,
+process, or driver is saved as a file.
+ - /bin - binary (executable) files of the most basic system utilities
+ - /boot - files needed to boot the system (kernel, initrd)
+ - /dev - the files here are not actually files on the disk. They refer to
+ devices - through them the system communicates with devices (low-level
+ communication)
+ - /etc - configuration files, system settings
+ - /home - files specifying the settings of each user. I addition the
+ directory is intended for saving data such as documents, pictures,
+ music and any files we use every day programs
+ - /lib - shared system libraries containing functions that are performed by
+ others
+ - /media - here we have access to removable media (it's a place for
+ mounting removable media - e.g. a flash drive or a CD-ROM)
+ - /mnt - the disks are "mounted" here (in distributions such as Ubuntu,
+ the disks are mounted in /media)
+ - /proc - virtual directory containing data about currently running processes
+ - /root - root user settings - the root administrator of each Linux system
+ with maximum permissions
+ - /sbin - command executables that can only be run by the system administrator
+ - /tmp - temporary files
+ - /user - additional programs that allow a normal system user to work
+ - /var - system files, whose contents change frequently, such as program
+ /system event logs
+
+ MacOS
+ -----
+ The directory structure on MacOS is similar to the directory structure on
+ Linux. This is due to the fact that both operating systems are historically
+ derived from Unix systems.
+
+ The most commonly used directories on macOS are:
+ - /Applications - this is the directory where the applications required by
+ all system users are installed. When installing software purchased in the
+ AppStore, the software is automatically installed in this directory. The
+ additional subdirectory /Utilities is responsible for the applications that
+ are used to manage the system.
+ - /Library - This is the directory where all additional libraries (
+ programs) required by others are stored for the software or the system.
+ - /Network - directory that contains the list of computers visible in the
+ local network. The directory may be empty.
+ - /System - operating system files, do not modify the contents of this
+ directory yourself.
+ - /Users - the user's home directory where all user files are stored.
 """
